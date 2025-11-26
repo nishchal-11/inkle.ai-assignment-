@@ -17,4 +17,4 @@ $env:NOMINATIM_EMAIL = 'travel-console@inkle.ai'
 # Options: gemini-1.5-flash (fast), gemini-1.5-pro (better quality)
 # $env:GEMINI_MODEL = 'gemini-1.5-pro'
 
-uvicorn server.main:app --reload --port 8000
+uvicorn server.main:app --host 0.0.0.0 --port 8000
